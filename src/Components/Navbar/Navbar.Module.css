@@ -1,0 +1,42 @@
+i {
+    color: white !important;
+    ;
+}
+
+nav {
+    background-color: var(--navy-blue);
+}
+
+nav h3 {
+    font-size: 20px;
+}
+
+
+.nav-link {
+    color: white !important;
+}
+
+
+.nav-link.active:focus {
+    color: #29CBBC !important;
+}
+
+.social_icon {
+    font-size: 20px;
+}
+
+
+
+@media screen and (max-width:992px) {
+
+    #navLogo {
+        display: none;
+    }
+}
+
+@media screen and (min-width:992px) {
+    #smallScreenLogo {
+        display: none;
+    }
+
+}

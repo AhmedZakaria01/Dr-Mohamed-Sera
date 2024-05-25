@@ -1,0 +1,42 @@
+.healthPriority {
+    background-image: url('../../../src/assets/home-background-bw.jpg');
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.healthPriority h4 {
+    margin: 0;
+}
+
+.layer {
+    background-color: black !important;
+    position: absolute;
+
+}
+
+.doctorName {
+    font-size: 50px !important;
+    font-family: "Lobster Two", sans-serif !important;
+}
+
+.yourHealthContainer {
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+    padding: 10px 10px !important;
+    color: white;
+}
+
+
+
+@media only screen and (max-width: 425px) {
+    .yourHealthContainer div {
+        padding: 10px 10px !important;
+    }
+
+    .yourHealthContainer h2 {
+        text-align: center;
+        background-color: var(--navy-blue);
+
+    }
+}
