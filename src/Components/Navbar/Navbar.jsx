@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "../../assets/logo.png";
+// import { render } from "react-dom";
+import ReactWhatsapp from "react-whatsapp";
 import "./Navbar.Module.css";
 
 const Navbar = () => {
@@ -15,7 +17,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div className="container-fluid ">
         <button
           className="navbar-toggler"
@@ -123,6 +125,13 @@ const Navbar = () => {
                 <Link to={"https://www.youtube.com/@yehiasera"} target="self">
                   <i className="fab mx-2 fa-youtube social_icon"></i>
                 </Link>
+                <ReactWhatsapp
+                  className=" border-0 bg-transparent "
+                  number="+20 1095521277"
+                  message="Hello, is there is anyone available to chat with !"
+                >
+                  <i className="fab mx-2 fa-whatsapp social_icon"></i>
+                </ReactWhatsapp>
               </li>
             </ul>
 

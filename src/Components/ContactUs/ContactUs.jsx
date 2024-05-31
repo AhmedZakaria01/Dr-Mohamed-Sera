@@ -3,6 +3,7 @@ import emailjs from "@emailjs/browser";
 import background from "../../assets/appointment.jpg";
 import "../../index.css";
 import "./ContactUs.Module.css";
+
 const ContactUs = () => {
   const form = useRef();
   const [formData, setFormData] = useState({
@@ -67,9 +68,7 @@ const ContactUs = () => {
 
   return (
     <>
-      <div className="appointment-background-container">
-
-      </div>
+      <div className="appointment-background-container"></div>
       <form
         ref={form}
         onSubmit={sendEmail}
