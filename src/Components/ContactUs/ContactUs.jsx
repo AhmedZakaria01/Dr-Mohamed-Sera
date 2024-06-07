@@ -1,8 +1,9 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
-import background from "../../assets/appointment.jpg";
 import "../../index.css";
 import "./ContactUs.Module.css";
+import ReactWhatsapp from "react-whatsapp";
+import { Link } from "react-router-dom";
 
 const ContactUs = () => {
   const form = useRef();
@@ -17,6 +18,7 @@ const ContactUs = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
+  // Email Js
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -66,15 +68,59 @@ const ContactUs = () => {
       );
   };
 
+  // Location
+
   return (
-    <>
-      <div className="appointment-background-container"></div>
+    <section className="contact-us vh-100 m-0 d-flex align-items-center p-5">
+      <div className="p-5">
+        <h1 className="pb-5 mb-5"> Contact Us </h1>
+        <h4 className="pb-3">
+          <strong> Maadi Clinic :</strong> 11 Al-Nasr Street, above Carrier
+          Building, Sokkakta, 2nd floor.
+        </h4>
+        <h4 className="pb-3">
+          <strong> Helwan Clinic :</strong> 32 Mohamed Sayed Ahmed Pasha Street
+          - Above Jad Restaurant - First Floor
+        </h4>
+        <h4 className="pb-3">
+          <strong> Maadi Clinic :</strong> 11 Al-Nasr Street, above Carrier
+          Building, Sokkakta, 2nd floor.
+        </h4>
+        <h4 className="pb-3">
+          <strong> Helwan Clinic :</strong> 32 Mohamed Sayed Ahmed Pasha Street
+          - Above Jad Restaurant - First Floor
+        </h4>
+        <ReactWhatsapp
+          className=" border-0 bg-transparent "
+          number="+20 1095521277"
+          message="Hello, is there is anyone available to chat with !"
+        >
+          <i className="fab mx-2 fa-whatsapp social_icon"></i>
+        </ReactWhatsapp>
+        <Link to={"https://www.facebook.com/DrMohamedsera"} target="self">
+          <i className="fab mx-2 fa-facebook social_icon"></i>
+        </Link>
+        <Link to={"https://www.instagram.com/dr.mohamed_sera/"} target="self">
+          <i className="fab mx-2 fa-instagram social_icon"></i>
+        </Link>
+        <Link
+          to={"https://www.linkedin.com/in/dr-mohamed-sera-01972822b/"}
+          target="self"
+        >
+          <i className="fab mx-2 fa-linkedin social_icon"></i>
+        </Link>
+
+        <Link to={"https://www.youtube.com/@yehiasera"} target="self">
+          <i className="fab mx-2 fa-youtube social_icon"></i>
+        </Link>
+      </div>
+
       <form
         ref={form}
         onSubmit={sendEmail}
-        className="p-4 col-sm-12 col-md-6 col-lg-6 mx-auto"
+        className="p-5 col-sm-12 col-md-6 col-lg-6 mx-auto rounded-4  "
       >
-        <div className="form-group mb-3">
+        <div className="form-group my-5 ">
           <label htmlFor="exampleInputEmail1" className="form-label">
             Name
           </label>
@@ -87,7 +133,7 @@ const ContactUs = () => {
             className="form-control py-1 px-2"
           />
         </div>
-        <div className="form-group mb-3">
+        <div className="form-group mb-5">
           <label htmlFor="exampleInputEmail1" className="form-label">
             Email
           </label>
@@ -100,7 +146,7 @@ const ContactUs = () => {
             className="form-control py-1 px-2"
           />
         </div>
-        <div className="form-group mb-3">
+        <div className="form-group mb-5">
           <label htmlFor="exampleInputPassword1" className="form-label">
             Phone Number
           </label>
@@ -113,7 +159,7 @@ const ContactUs = () => {
             className="form-control py-1 px-2"
           />
         </div>
-        <div className="form-group mb-3">
+        <div className="form-group mb-5">
           <label htmlFor="exampleInputPassword1" className="form-label">
             Message
           </label>
@@ -125,23 +171,13 @@ const ContactUs = () => {
             className="form-control py-1 px-2"
           />
         </div>
-        <button type="submit" className="btn btn-primary px-5 py-2">
-          Send
-        </button>
+        <div className="text-center mb-5">
+          <button type="submit" className="px-5 py-2 navy-btn ">
+            Send
+          </button>
+        </div>
       </form>
-
-      <div className="text-center ">
-        <h2 className="sectionHeader py-3 mb-4"> Adress </h2>
-        <h4 className="text-cneter">
-          Maadi Clinic: 11 Al-Nasr Street, above Carrier Building, Sokkakta, 2nd
-          floor.
-        </h4>
-        <h4>
-          Helwan Clinic: 32 Mohamed Sayed Ahmed Pasha Street - Above Jad
-          Restaurant - First Floor
-        </h4>
-      </div>
-    </>
+    </section>
   );
 };
 

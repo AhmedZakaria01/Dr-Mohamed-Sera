@@ -1,0 +1,9 @@
+.slick-dots li button::before {
+    color: #dbdbdb !important;
+    background-color: transparent;
+    font-size: 10px !important;
+}
+
+.slick-dots li.slick-active button::before {
+    color: #ffffff !important;
+}

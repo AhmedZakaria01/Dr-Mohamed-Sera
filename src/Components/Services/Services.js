@@ -9,6 +9,7 @@ import "./Services.Module.css";
 
 // Slider Settings
 const settings = {
+  dots: true,
   infinite: true,
   slidesToShow: 3,
   slidesToScroll: 1,
@@ -50,7 +51,7 @@ function Services() {
     <>
       {/* Second Section */}
       <section className="slider">
-        <h2 className="text-center py-4 sectionHeader">Our Services</h2>
+        <h2 className="text-center py-4 sectionHeader h1">Our Services</h2>
         <Slider
           className="w-75 m-auto d-flex justify-content-center"
           {...settings}

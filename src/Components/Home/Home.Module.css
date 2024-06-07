@@ -27,7 +27,10 @@
     color: white;
 }
 
-
+.slider img {
+    width: 120px !important;
+    height: 120px !important;
+}
 
 @media only screen and (max-width: 425px) {
     .yourHealthContainer div {

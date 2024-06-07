@@ -14,9 +14,9 @@ const Layout = () => {
   }, []);
   return (
     <div className="overflow-hidden">
-      <Navbar />
+      <Navbar className="" />
       {!loading ? <Outlet /> : <Loading />}
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 };

@@ -4,6 +4,8 @@ import "./Home.Module.css";
 import Services from "./../Services/Services";
 import { Link } from "react-router-dom";
 import "../../index.css";
+import ContactUs from "../ContactUs/ContactUs";
+import ReactWhatsapp from "react-whatsapp";
 
 const Home = () => {
   return (
@@ -101,7 +103,7 @@ const Home = () => {
             </h4>
           </div>
           <div>
-            <button className="blue-btn px-3 py-2 mt-3">
+            <button className="navy-btn px-3 py-2 mt-3">
               <Link to={"contact_us"} className="text-white">
                 Book an appointment
               </Link>
@@ -111,6 +113,62 @@ const Home = () => {
       </section>
 
       <Services />
+      <section className="text-center my-5">
+        <div className="p-5">
+          <h2 className="pb-5 mb-5 h1"> Contact Us </h2>
+          <div className="text-start d-flex">
+            <div>
+              <h4 className="pb-3">
+                <strong> Maadi Clinic :</strong> 11 Al-Nasr Street, above
+                Carrier Building, Sokkakta, 2nd floor.
+              </h4>
+              <h4 className="pb-3">
+                <strong> Helwan Clinic :</strong> 32 Mohamed Sayed Ahmed Pasha
+                Street - Above Jad Restaurant - First Floor
+              </h4>
+            </div>
+            <div>
+              <h4 className="pb-3">
+                <strong> Maadi Clinic :</strong> 11 Al-Nasr Street, above
+                Carrier Building, Sokkakta, 2nd floor.
+              </h4>
+              <h4 className="pb-3">
+                <strong> Helwan Clinic :</strong> 32 Mohamed Sayed Ahmed Pasha
+                Street - Above Jad Restaurant - First Floor
+              </h4>
+            </div>
+          </div>
+
+          <div className="my-4">
+            <Link to={"https://www.facebook.com/DrMohamedsera"} target="self">
+              <i className="fab mx-2 fa-facebook social_icon"></i>
+            </Link>
+            <Link
+              to={"https://www.instagram.com/dr.mohamed_sera/"}
+              target="self"
+            >
+              <i className="fab mx-2 fa-instagram social_icon"></i>
+            </Link>
+            <Link
+              to={"https://www.linkedin.com/in/dr-mohamed-sera-01972822b/"}
+              target="self"
+            >
+              <i className="fab mx-2 fa-linkedin social_icon"></i>
+            </Link>
+
+            <Link to={"https://www.youtube.com/@yehiasera"} target="self">
+              <i className="fab mx-2 fa-youtube social_icon"></i>
+            </Link>
+            <ReactWhatsapp
+              className=" border-0 bg-transparent "
+              number="+20 1095521277"
+              message="Hello, is there is anyone available to chat with !"
+            >
+              <i className="fab mx-2 fa-whatsapp social_icon"></i>
+            </ReactWhatsapp>
+          </div>
+        </div>
+      </section>
     </section>
   );
 };

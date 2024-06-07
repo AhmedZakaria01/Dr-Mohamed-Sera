@@ -1,6 +1,5 @@
 i {
     color: white !important;
-    ;
 }
 
 nav {
@@ -13,12 +12,12 @@ nav h3 {
 
 
 .nav-link {
-    color: white !important;
+    color: rgb(191, 191, 191) !important;
 }
 
 
 .nav-link.active:focus {
-    color: #29CBBC !important;
+    color: #fff !important;
 }
 
 .social_icon {
@@ -28,7 +27,6 @@ nav h3 {
 
 
 @media screen and (max-width:992px) {
-
     #navLogo {
         display: none;
     }
@@ -38,5 +36,4 @@ nav h3 {
     #smallScreenLogo {
         display: none;
     }
-
 }

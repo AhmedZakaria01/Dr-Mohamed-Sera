@@ -5,7 +5,7 @@
 
 
 :root {
-  --navy-blue: #152031 !important;
+  --navy-blue: #242837 !important;
 }
 
 * {
@@ -20,7 +20,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: linear-gradient(90deg, rgba(46, 132, 194, 1) 0%, rgba(73, 151, 205, 1) 50%, rgba(158, 194, 219, 1) 100%);
+  background: var(--navy-blue) !important;
   color: #fff !important;
 
 }
@@ -31,18 +31,24 @@ code {
 }
 
 .sectionHeader {
-  background: linear-gradient(90deg, rgba(158, 194, 219, 0.5) 0%, rgba(73, 151, 205, 0.5) 50%, rgba(46, 132, 194, 0.5) 100%) !important;
+  background: var(--navy-blue);
 }
 
 .main-color {
   color: #29CBBC !important;
 }
 
-.blue-btn {
-  background-color: #3689c5;
+.navy-btn {
+  background-color: var(--navy-blue);
   border: 0;
   border-radius: 5px;
   padding: 10px 20px !important;
+  color: #fff;
+}
+
+.navy-btn:hover {
+  background-color: #131a32;
+  color: #fff;
 }
 
 .blue-color {
@@ -87,9 +93,4 @@ p {
 
 li {
   margin: 10px
-}
-
-.slider img {
-  width: 200px;
-  height: 200px;
 }
