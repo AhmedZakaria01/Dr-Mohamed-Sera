@@ -4,7 +4,8 @@ import Home from "./Components/Home/Home";
 // import Navbar from './Components/Navbar/Navbar';
 import Layout from "./Components/Layout/Layout";
 import ContactUs from "./Components/ContactUs/ContactUs";
-import AboutUs from "./Components/ContactUs/AboutUs/AboutUs";
+import AboutUs from "./Components/AboutUs/AboutUs";
+import AbdominalWallSurgeries from "./Components/Services/ServicesCategories/AbdominalWallSurgeries";
 
 const routes = createBrowserRouter([
   {
@@ -12,8 +13,9 @@ const routes = createBrowserRouter([
     element: <Layout />,
     children: [
       { index: true, element: <Home /> },
-      { path: "contact_us", element: <ContactUs /> },
-      { path: "about_us", element: <AboutUs /> },
+      { path: "/contact_us", element: <ContactUs /> },
+      { path: "/about_us", element: <AboutUs /> },
+      { path: "/services", element: <AbdominalWallSurgeries /> },
     ],
   },
 ]);

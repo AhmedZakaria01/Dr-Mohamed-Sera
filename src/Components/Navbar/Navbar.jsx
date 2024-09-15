@@ -32,10 +32,18 @@ const Navbar = () => {
           className={`collapse navbar-collapse ${isOpen ? "show" : ""}`}
           id="navbarNav"
         >
-          <Link className="navbar-brand" to="/">
-            <img src={logo} id="navLogo" width={50} height={50} alt="logo" />
-          </Link>
-          <ul className="navbar-nav me-auto mt-2 mt-lg-0">
+          <ul className="navbar-nav mx-auto d-flex align-items-center mt-2 mt-lg-0">
+            <li>
+              <Link className="navbar-brand" to="/">
+                <img
+                  src={logo}
+                  id="navLogo"
+                  width={50}
+                  height={50}
+                  alt="logo"
+                />
+              </Link>
+            </li>
             <li className="nav-item">
               <Link
                 className="nav-link active"
@@ -91,7 +99,7 @@ const Navbar = () => {
               </Link>
             </li>
           </ul>
-          <ul className="navbar-nav ms-auto mt-2 mt-lg-0">
+          <ul className="navbar-nav mx-auto mt-2 mt-lg-0">
             <li className="nav-item d-flex align-items-center text-dark">
               <Link to="https://www.facebook.com/DrMohamedsera" target="_self">
                 <i className="fab mx-2 fa-facebook social_icon"></i>

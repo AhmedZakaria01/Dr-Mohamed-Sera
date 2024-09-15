@@ -71,9 +71,9 @@ const ContactUs = () => {
   // Location
 
   return (
-    <section className="contact-us vh-100 m-0 d-flex align-items-center p-5">
+    <section className="contact-us vh-100 m-0 d-flex align-items-center text-white p-5">
       <div className="p-5">
-        <h1 className="pb-5 mb-5"> Contact Us </h1>
+        <h1 className="pb-5 mb-2"> Contact Us </h1>
         <h4 className="pb-3">
           <strong> Maadi Clinic :</strong> 11 Al-Nasr Street, above Carrier
           Building, Sokkakta, 2nd floor.
@@ -118,9 +118,9 @@ const ContactUs = () => {
       <form
         ref={form}
         onSubmit={sendEmail}
-        className="p-5 col-sm-12 col-md-6 col-lg-6 mx-auto rounded-4  "
+        className="p-5 col-sm-12 col-md-4 col-lg-4 mx-auto rounded-4  "
       >
-        <div className="form-group my-5 ">
+        <div className="form-group my-3 ">
           <label htmlFor="exampleInputEmail1" className="form-label">
             Name
           </label>
@@ -171,8 +171,11 @@ const ContactUs = () => {
             className="form-control py-1 px-2"
           />
         </div>
-        <div className="text-center mb-5">
-          <button type="submit" className="px-5 py-2 navy-btn ">
+        <div className="text-center m3-5">
+          <button
+            type="submit"
+            className="px-5 py-2 btn btn-sm navy-background "
+          >
             Send
           </button>
         </div>

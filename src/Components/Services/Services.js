@@ -1,9 +1,9 @@
 import Slider from "react-slick";
-import bwaser from "../../assets/bwaser.png";
-import kawlon from "../../assets/kwlon.png";
-import shar5 from "../../assets/shar5.png";
-import zefr from "../../assets/zefr.png";
-import mnzar from "../../assets/mnzar.png";
+import bwaser from "../../assets/22.png";
+import kawlon from "../../assets/6.png";
+import shar5 from "../../assets/23.png";
+import zefr from "../../assets/8.png";
+import mnzar from "../../assets/10.png";
 import "../../index.css";
 import "./Services.Module.css";
 
@@ -19,9 +19,17 @@ const settings = {
   arrows: false,
   responsive: [
     {
+      breakpoint: 1400,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        infinite: true,
+      },
+    },
+    {
       breakpoint: 1024,
       settings: {
-        slidesToShow: 3,
+        slidesToShow: 1,
         slidesToScroll: 1,
         infinite: true,
       },
@@ -29,7 +37,7 @@ const settings = {
     {
       breakpoint: 600,
       settings: {
-        slidesToShow: 2,
+        slidesToShow: 1,
         slidesToScroll: 1,
         initialSlide: 2,
         infinite: true,
@@ -51,9 +59,9 @@ function Services() {
     <>
       {/* Second Section */}
       <section className="slider">
-        <h2 className="text-center py-4 sectionHeader h1">Our Services</h2>
+        <h2 className="text-center py-5   h1  ">OUR SERVICES</h2>
         <Slider
-          className="w-75 m-auto d-flex justify-content-center"
+          className="w-100 m-auto d-flex justify-content-center"
           {...settings}
         >
           <div className="text-center px-3 w-75 d-block mx-auto">

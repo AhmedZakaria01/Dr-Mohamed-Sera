@@ -1,7 +1,20 @@
-import dr_mohamed from "../../../assets/doctor.jpeg";
+import { useEffect, useState } from "react";
+import dr_mohamed from "../../assets/doctor.jpeg";
 import "./AboutUs.Module.css";
+import Loading from "../Loading/Loading";
 
 function AboutUs() {
+    const [loading, setLoading] = useState(true);
+
+    useEffect(() => {
+      const timer = setTimeout(() => {
+        setLoading(false);
+      }, 2000);
+
+      return () => clearTimeout(timer);
+    }, []);
+
+    loading && <Loading />;
   return (
     <div className="about-us-container">
       <h1 className="text-center">ABOUT US</h1>

@@ -20,8 +20,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: var(--navy-blue) !important;
-  color: #fff !important;
+
 
 }
 
@@ -42,7 +41,7 @@ code {
   background-color: var(--navy-blue);
   border: 0;
   border-radius: 5px;
-  padding: 10px 20px !important;
+  padding: 5px 10px !important;
   color: #fff;
 }
 
@@ -60,7 +59,12 @@ code {
 }
 
 .navy-background {
-  background-color: #152031 !important;
+  background-color: #242837 !important;
+  color: #fff !important;
+}
+
+.navy-background:hover {
+  background-color: #1e3456 !important;
 }
 
 .blue-btn:hover {

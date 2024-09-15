@@ -1,10 +1,13 @@
 .contact-us {
-    background-image: url(../../assets/bg.png) !important;
+    background-image: url(../../assets/Frame\ 1.png) !important;
     background-size: 100% 100%;
     background-position: center center;
     background-repeat: none;
 }
 
 .contact-us form {
-    background-color: #242837;
+    /* background-color: #242837;
+        */
+    background-color: #fff;
+    color: #000;
 }
