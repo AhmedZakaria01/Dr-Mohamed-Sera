@@ -37,18 +37,18 @@ const AbdominalWallSurgeries = () => {
             restoring a firmer, more toned appearance.
           </p>
         </div>
-        <div className="col-md-6">
-          <img src={img1} alt="Tummy Tuck" className="img-fluid rounded-3" />
+        <div className="col-md-6 text-center">
+          <img src={img1} alt="Tummy Tuck" className="img-fluid  w-75 rounded-3" />
         </div>
       </div>
 
       {/* Second Section: Image Left, Text Right */}
       <div className="row mb-5 align-items-center">
-        <div className="col-md-6">
+        <div className="col-md-6 text-center">
           <img
             src={img2}
             alt="Causes of Sagging Abdomen"
-            className="img-fluid rounded-3"
+            className="img-fluid  w-75 rounded-1"
           />
         </div>
         <div className="col-md-6 px-4 ">
@@ -99,11 +99,11 @@ const AbdominalWallSurgeries = () => {
             </li>
           </ul>
         </div>
-        <div className="col-md-6 px-4">
+        <div className="col-md-6 px-4 text-center">
           <img
             src={img3}
             alt="Types of Tummy Tuck"
-            className="img-fluid rounded-3"
+            className="img-fluid w-75 rounded-1"
           />
         </div>
       </div>
@@ -171,11 +171,11 @@ const AbdominalWallSurgeries = () => {
             procedures, depending on the severity of the case.
           </p>
         </div>
-        <div className="col-md-6">
+        <div className="col-md-6 text-center">
           <img
             src={img4}
             alt="Umbilical Hernia"
-            className="img-fluid rounded-3"
+            className="img-fluid w-75 rounded-1"
           />
         </div>
       </div>

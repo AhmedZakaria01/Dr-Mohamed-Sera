@@ -1,39 +1,98 @@
+/* Style for icons */
 i {
-    color: white !important;
+  color: white !important;
 }
 
+/* Navbar styling */
 nav {
-    background-color: var(--navy-blue);
+  background-color: #332d23; /* Added background color */
+  padding: 20px; /* Added padding for spacing */
 }
 
-nav h3 {
-    font-size: 20px;
+/* Navbar link styling */
+.nav-link h3 {
+  font-size: 18px; /* Adjusted font size */
+  color: rgb(191, 191, 191) !important; /* Ensuring visibility */
 }
 
-
-.nav-link {
-    color: rgb(191, 191, 191) !important;
-}
-
-
+/* Active state link */
 .nav-link.active:focus {
-    color: #fff !important;
+  color: #fff !important;
 }
 
+/* Icon sizing */
 .social_icon {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 
 
-@media screen and (max-width:992px) {
-    #navLogo {
-        display: none;
-    }
+
+
+
+
+
+
+
+
+
+
+
+
+/* /////////// */
+/* .navbar-nav .dropdown-menu {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  border-radius: 0.25rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
 
-@media screen and (min-width:992px) {
-    #smallScreenLogo {
-        display: none;
-    }
+.navbar-nav .dropdown:hover .dropdown-menu {
+  display: flex;
+}
+
+.dropdown-menu .dropdown-item {
+  padding: 0.5rem 1rem;
+}
+
+.navbar-nav .dropdown-toggle::after {
+  display: none;
+}
+
+.navbar-toggler-icon {
+  background-image: none;
+  width: 30px;
+  height: 30px;
+  background: rgb(118, 24, 24); 
+} */
+
+
+
+/* ////////// */
+
+
+/* Mobile-specific adjustments */
+@media screen and (max-width: 992px) {
+  #navLogo {
+    display: none;
+  }
+}
+
+/* Desktop-specific adjustments */
+@media screen and (min-width: 992px) {
+  #smallScreenLogo {
+    display: none;
+  }
+}
+
+/* Styling for navbar toggler */
+.navbar-toggler-icon {
+  background-color: white; /* Ensuring visibility of toggler on dark background */
+}
+.buttonStyle{
+    background-color: var(--btn-bg);
 }

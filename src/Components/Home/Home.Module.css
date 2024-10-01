@@ -1,7 +1,8 @@
 .healthPriority {
-    background-image: url('../../../src/assets/home-background-bw.jpg');
+    background-image: url('../../../src/assets/home.png');
     background-size: 100% 100%;
-    background-position: center;
+    /* background-size: cover; */
+    background-position: center center;
     background-repeat: no-repeat;
 }
 
@@ -36,11 +37,78 @@
 
 
 
+.image-box1::before,
+.image-box2::before,
+.image-box3::before,
+.image-box4::before,
+.image-box5::before,
+.image-box6::before {
+    content: 'An ingrown nail occurs when the nail bends at its outer edge and grows into the skin.';
+    color: var(--text--color);
+    display: flex;
+    align-items: center;
+    position: absolute;
+    padding: 0 10px 0 10px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(42, 41, 41, 0.485);
+    transform: scaleY(0);
+    transition: all 1s;
+}
 
+.image-box1:hover:before,
+.image-box2:hover:before,
+.image-box3:hover:before,
+.image-box4:hover:before,
+.image-box5:hover:before,
+.image-box6:hover:before {
+    transform: scaleY(1);
+}
 
+.image-box1::before {
+    content: 'It refers to an abnormal dilation of the blood vessels located at the end of the rectum and anus';
+}
 
+.image-box2::before {
+    content: 'An ingrown nail occurs when the nail bends at its outer edge and grows into the skin';
+}
 
+.image-box3::before {
+    content: 'Laparoscopic gallbladder removal surgeries, surgical and laparoscopic appendectomy, abdominal wall muscle repair, and laparoscopic hernia repair';
 
+}
+
+.image-box4::before {
+    content: 'Laparoscopic gallbladder removal surgeries, surgical appendectomy,repair of abdominal wall muscles, and laparoscopic hernia repair';
+
+}
+
+.image-box5::before {
+    content: 'Surgical treatments for chronic constipation disorders, excision of rectal pockets, surgical procedures for anal hemorrhoids, anal fistulas, anal abscesses, and Hirschsprung\'s disease';
+
+}
+.image-box6::before {
+    content: 'Surgical removal of the colon, either completely or partially, using laparoscopic techniques, and excision of benign and malignant colon tumors';
+
+}
+
+.homepartStyle {
+    background-image: url('../../assets/homepar.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    min-height: 300px;
+}
+
+.analBackground{
+    background-image: url('../../assets/anal.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    min-height: 180px; 
+}
 
 
 

@@ -6,6 +6,13 @@
 
 :root {
   --navy-blue: #242837 !important;
+  --dark-gray:#353431;
+  --nav-bg: #0000009e;
+  --buff-bg: #f3e6ce;
+  --btn-bg: #7A6234;
+  --text--color: #B9AD95;
+  --header-color: #BF7E00;
+  --text-dark:#162842;
 }
 
 * {
@@ -20,6 +27,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--buff-bg) !important;
 
 
 }
@@ -91,10 +99,18 @@ h6 {
 }
 
 p {
-  font-family: 'Tajawal', sans-serif;
-  font-weight: 200;
+  /* font-family: 'Tajawal', sans-serif; */
+  font-weight: 300;
 }
 
 li {
   margin: 10px
 }
+
+.textColor{
+color: var(--text--color);
+}
+.headerColor{
+  color: var(--header-color);
+}
+

@@ -6,6 +6,7 @@ import Layout from "./Components/Layout/Layout";
 import ContactUs from "./Components/ContactUs/ContactUs";
 import AboutUs from "./Components/AboutUs/AboutUs";
 import AbdominalWallSurgeries from "./Components/Services/ServicesCategories/AbdominalWallSurgeries";
+import AnalFissure from "./Components/Services/ServicesCategories/AnalFissure";
 
 const routes = createBrowserRouter([
   {
@@ -15,7 +16,7 @@ const routes = createBrowserRouter([
       { index: true, element: <Home /> },
       { path: "/contact_us", element: <ContactUs /> },
       { path: "/about_us", element: <AboutUs /> },
-      { path: "/services", element: <AbdominalWallSurgeries /> },
+      { path: "/services", element: <AnalFissure /> },
     ],
   },
 ]);

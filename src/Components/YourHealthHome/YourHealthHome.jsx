@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 function YourHealthHome() {
     return (
-      <div className="yourHealthContainer col-12 col-md-6 align-items-center">
+      <div className="yourHealthContainer col-12 col-md-7 ">
         <h2 className=" fw-bold py-2 secondary-font">
           Your health is our priority
         </h2>
