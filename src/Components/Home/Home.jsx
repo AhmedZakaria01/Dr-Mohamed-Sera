@@ -162,7 +162,7 @@ const Home = () => {
               <img src={photo} alt="" width={"100%"} />
             </div>
             <div>
-              <p className="p-2 fs-3 fw-medium text-center">
+              <p className="p-2 fs-4 fw-medium text-center">
                 Dr. Mohamed Sera’s clinic combines expertise with the latest
                 surgical innovations to ensure quick recovery and minimal
                 discomfort. Whether you need a simple or complex procedure, our
@@ -191,7 +191,7 @@ const Home = () => {
           className="px-md-5 px-1 text-light py-3"
           style={{ backgroundColor: "#393426" }}
         >
-          <h1 className="px-2 px-md-4"> About Dr Mohamed Sera</h1>
+          <h1 className="px-2 h2 px-md-4"> About Dr Mohamed Sera</h1>
           <ul className="px-md-5 ps-3">
             <li>
               Consultant in General Surgery and Advanced Laparoscopic Surgery.

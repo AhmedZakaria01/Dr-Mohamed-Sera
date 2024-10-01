@@ -19,7 +19,7 @@ function AboutUs() {
   return (
     <>
       <div className="about-us-container">
-        <h1 className="text-center">ABOUT US</h1>
+        {/* <h1 className="text-center">ABOUT US</h1> */}
         <div className="row d-flex justify-content-center">
           {/* <div className="col-sm-12 col-md-4 text-center mb-3">
             <img
@@ -162,16 +162,16 @@ function AboutUs() {
           <div className="col-sm-12 col-md-4 text-center mb-3">
             <img
               src={dr_mohamed}
-              className="rounded-4 w-75"
+              className="rounded-4 w-50"
               alt="Dr. Mohamed Sera"
             />
           </div>
         </div>
 
-        <h1>
+        <h2>
           Dr.MOHAMED SERA ALSO PARTICIPATED IN ATTENDING SOME FORUMS TO SHARE
           OPINIONS AND INFORMATION, SUCH AS
-        </h1>
+        </h2>
         <article className="my-3">
           When we talk about us we will start with doctor Mohamed Sera and his
           educational journey from Al kasr EL Ainy to be a proficient vascular
