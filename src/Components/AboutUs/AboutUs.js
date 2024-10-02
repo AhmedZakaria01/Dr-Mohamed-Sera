@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import dr_mohamed from "../../assets/doctor.jpeg";
-import "./AboutUs.Module.css";
 import Loading from "../Loading/Loading";
 import Certificates from "../Certificates/Certificates";
+import "./AboutUs.Module.css";
 
 function AboutUs() {
   const [loading, setLoading] = useState(true);
@@ -143,8 +143,8 @@ function AboutUs() {
       <div className="container">
         <div className="d-flex align-items-center">
           <div>
-            <h1> Dr.Mohamed Sera</h1>
-            <p>
+            <h1 className="h3 titlecolor"> Dr.Mohamed Sera</h1>
+            <article className="my-3">
               Dr. Sera has a TOEFL certificate from AMIDEAST, which is
               accredited by the British Embassy. Moreover, Sera was appointed as
               the permanent President of the world society for pelvic diseases
@@ -156,24 +156,25 @@ function AboutUs() {
               and the 2nd Conference of the International Society of Pelvic
               Floor and Disorders in Mumbai, India, September 2016. As well as
               he is a member of the Egyptian Society of Surgeons (Egypt).
-            </p>
+            </article>
           </div>
-
           <div className="col-sm-12 col-md-4 text-center mb-3">
             <img
               src={dr_mohamed}
-              className="rounded-4 w-50"
+              className="rounded-2 w-50 mt-5"
               alt="Dr. Mohamed Sera"
+              // width={'220px'}
+              style={{
+                boxShadow: "1px 1px 5px 0px #000000",
+              }}
             />
           </div>
         </div>
-              
 
-              
-        <h2>
+        <h1 className="h3 titlecolor">
           Dr.MOHAMED SERA ALSO PARTICIPATED IN ATTENDING SOME FORUMS TO SHARE
           OPINIONS AND INFORMATION, SUCH AS
-        </h2>
+        </h1>
         <article className="my-3">
           When we talk about us we will start with doctor Mohamed Sera and his
           educational journey from Al kasr EL Ainy to be a proficient vascular
@@ -187,60 +188,66 @@ function AboutUs() {
           until now.
         </article>
 
-        <h5 className="mt-3 ">
+        <h1 className="h3 titlecolor mt-5">
           Dr.MOHAMED SERA ALSO PARTICIPATED IN ATTENDING SOME FORUMS TO SHARE
           OPINIONS AND INFORMATION, SUCH AS
-        </h5>
+        </h1>
         <ul className="list-unstyled">
           <li>
-            <span className="text-warning"> - </span> The Second International
-            Academic Symposium of Constipation” in Hangzhou, China, 2010.
+            <span className="titlecolor fw-medium fs-5">- </span> The Second
+            International Academic Symposium of Constipation” in Hangzhou,
+            China, 2010.
           </li>
           <li>
-            <span className="text-warning"> - </span>Attending “Basic and
-            Clinical Research of Pelvic - Floor Disorders” in Hangzhou, China,
-            2010.
+            <span className="titlecolor fw-medium fs-5"> - </span>Attending
+            “Basic and Clinical Research of Pelvic - Floor Disorders” in
+            Hangzhou, China, 2010.
           </li>
           <li>
-            <span className="text-warning"> - </span> Attending the World Pelvic
-            Floor Association
+            <span className="titlecolor fw-medium fs-5"> - </span> Attending the
+            World Pelvic Floor Association
           </li>
           <li>
-            <span className="text-warning"> - </span> Attending the course
-            "Career Development in Medicine"
+            <span className="titlecolor fw-medium fs-5"> - </span> Attending the
+            course "Career Development in Medicine"
           </li>
           <li>
-            <span className="text-warning"> - </span> Training at Damascus
-            University in Syria 2006.
+            <span className="titlecolor fw-medium fs-5"> - </span> Training at
+            Damascus University in Syria 2006.
           </li>
           <li>
-            <span className="text-warning"> - </span> Attending the "Basics of
-            Infection Control" course in King Abdullah City - Al Ain Hospital.
+            <span className="titlecolor fw-medium fs-5"> - </span> Attending the
+            "Basics of Infection Control" course in King Abdullah City - Al Ain
+            Hospital.
           </li>
           <li>
-            <span className="text-warning"> - </span> Attending the "Medical
-            Practice Ethics" course at King Abdullah City for Science and
-            Technology - Al Ain Hospital.
+            <span className="titlecolor fw-medium fs-5"> - </span> Attending the
+            "Medical Practice Ethics" course at King Abdullah City for Science
+            and Technology - Al Ain Hospital.
           </li>
           <li>
-            <span className="text-warning"> - </span> Attending the "Healthcare
-            Communication" course.
+            <span className="titlecolor fw-medium fs-5"> - </span> Attending the
+            "Healthcare Communication" course.
           </li>
           <li>
-            <span className="text-warning"> - </span> Attend the Basic Surgical
-            Skill Course in the Learning Resource Center.
+            <span className="titlecolor fw-medium fs-5"> - </span> Attend the
+            Basic Surgical Skill Course in the Learning Resource Center.
           </li>
           <li>
-            <span className="text-warning"> - </span> Attending the "immediate
-            life support" program qualified by the European Resuscitation
-            Council.
+            <span className="titlecolor fw-medium fs-5"> - </span> Attending the
+            "immediate life support" program qualified by the European
+            Resuscitation Council.
           </li>
           <li>
-            <span className="text-warning"> - </span> Attending the
+            <span className="titlecolor fw-medium fs-5"> - </span> Attending the
             “Cardiopulmonary Resuscitation Training” included in the “ILS”
           </li>
         </ul>
+        <div>
+        <h1 className="h3 mt-5 titlecolor">          Certificates
+        </h1>
         <Certificates />
+        </div>
       </div>
     </>
   );

@@ -112,9 +112,6 @@ function Certificates() {
         </Slider>
       </section> */}
       <div className="text-center pb-4 ">
-        <p style={{ color: "#BF7E00", fontWeight: "500", fontSize: "2rem" }}>
-          Certificates
-        </p>
       </div>
       <section className="d-flex mb-5 pb-3 ">
         <div className="container text-center d-flex flex-column flex-md-row">
