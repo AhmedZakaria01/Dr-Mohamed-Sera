@@ -141,7 +141,7 @@ function AboutUs() {
       </div>
 
       <div className="container">
-        <div className="d-flex align-items-center flex-column flex-md-flex-row">
+        <div className="d-flex align-items-center flex-column flex-md-row">
           <div>
             <h1 className="h3 titlecolor"> Dr.Mohamed Sera</h1>
             <article className="my-3">
