@@ -1,5 +1,3 @@
-// src/components/Footer.js
-
 import { Link } from "react-router-dom";
 import WhatsappButton from "./WhatsappButton";
 

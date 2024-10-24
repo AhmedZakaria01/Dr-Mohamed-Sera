@@ -1,6 +1,5 @@
 import { t } from "i18next";
-import { Link } from "react-router-dom";
-import Button from "./button";
+import Button from "./Button";
 import circleBg from "../assets/circle_bg.png";
 
 function HeroSection() {
@@ -29,7 +28,6 @@ function HeroSection() {
             {t(
               "Dr Mohamed Sera provide expert medical advice and consultation. Get in touch with our team to discuss"
             )}
-            
           </p>
           <Button text={"Book Now"} to={"/contact_us"} />
         </div>

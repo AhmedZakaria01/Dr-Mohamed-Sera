@@ -1,16 +1,11 @@
-import { Link } from "react-router-dom";
 import dr_mohamed_about from "../assets/dr_mohamed.png";
-import PropTypes from "prop-types";
-import Button from "./button";
+import Button from "./Button";
 import { t } from "i18next";
-function About_Dr_Home({ fadeUp, fadeRight }) {
+function About_Dr_Home() {
   return (
     <>
       <section className="text-black  ">
-        <div
-          className="flex xs:flex-col xl:flex-row xl:text-[20px] flex-wrap lg:flex-nowrap mx-auto gap-5 items-center "
-       
-        >
+        <div className="flex xs:flex-col xl:flex-row xl:text-[20px] flex-wrap lg:flex-nowrap mx-auto gap-5 items-center ">
           <img
             src={dr_mohamed_about}
             className=" md:w-full rounded-md 2xl:w-1/2"
@@ -42,8 +37,3 @@ function About_Dr_Home({ fadeUp, fadeRight }) {
 }
 
 export default About_Dr_Home;
-
-About_Dr_Home.propTypes = {
-  fadeUp: PropTypes.string,
-  fadeRight: PropTypes.string,
-};
